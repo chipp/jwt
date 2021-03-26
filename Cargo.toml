@@ -1,0 +1,10 @@
+[package]
+name = "jwt"
+version = "0.1.0"
+authors = ["Vladimir Burdukov <chippcheg@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.13"
+serde_json = "1"
+chrono = "*"
