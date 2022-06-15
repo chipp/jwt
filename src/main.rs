@@ -24,6 +24,10 @@ fn main() {
                 Local.timestamp(exp, 0).to_string()
             );
         }
+
+        if let Some(iat) = map.get("iat").and_then(|v| v.as_i64()) {
+            println!("Issued at: {}", Local.timestamp(iat, 0).to_string());
+        }
     }
 
     print_claims(claims);
